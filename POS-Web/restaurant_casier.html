@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+	<style>
+		.page-wrapper{
+			height: 100px;
+		}
+		.left-div{
+			background-color: aqua;
+			width: 50%;
+			float: left;
+			height: 900px;
+			
+			
+		}
+		.right-div{
+			background-color: blue;
+			float: right;
+			width: 50%;
+			height: 900px;
+		}
+		.display-item{
+			background-color: #ffc3ee;
+			height: 50%;
+			margin-top: 20px;
+		}
+		.display-total{
+			background-color: #eeffc3;
+			height: 20%;
+		}
+		.four-box{
+			float: left;
+			width: 23.2%;
+			padding-left: 10px;
+			
+		}
+		.clearfix::after{
+			clear: both;
+			display: table;
+			content: "";
+		}
+		.two-box1{
+			float: left;
+			width: 50%;
+			padding-left: 20px;
+		}
+		.two-box2{
+			float: right;
+			width: 20%;
+			padding-right: 10px;
+			
+		}
+		
+		.btm-div{
+			float: left;
+		}
+		.pay{
+			position: absolute;
+			margin-left: 0;
+			left: 11px;
+			top: 664px;
+			margin: 10px 2px;
+			font-size: 30px;
+			margin-top: 30px;
+			cursor: pointer;
+			text-align: center;
+			padding: 15px 80px;
+				
+		}
+		#price{
+			padding-left: 56px;
+		}
+		.category{
+			background-color: #ffaa54;
+			height: 900px;
+			width: 30%;
+			float: left;
+			margin-top: 20px;
+		}
+		.display-category{
+			background-color: #e8ffa3;
+			height: 900px;
+			float: right;
+			width: 70%;
+			margin-top: 20px;
+		}
+		
+		.category-box{
+			margin: 10px 10px;
+		}
+		.btn-category{
+			font-size: 19px;
+			padding: 10px 10px;
+			background-color: #a1ff96;
+		}
+	</style>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<div class="page-wrapper">
+		<div class="left-div">
+			<div class="display-item">
+				<div class="clearfix">
+				  <div class="four-box" id="box-no">
+						<p >NO</p>
+					</div>
+				  <div class="four-box" id="box-item">
+						<p>ITEM</p>
+				  </div>
+					<div class="four-box" id="box-qty">
+						<p>QTY</p>
+					</div>
+				  <div class="four-box" id="box-price">
+						<p>PRICE</p>
+					</div>
+				</div>
+			</div>
+		  <div class="display-total">
+				<div class="clearfix">
+				<div class="two-box1">
+					<p>Sub Total</p>
+					<p>Tax</p>
+					<p>Discount</p>
+					<p>Grand Total</p>
+					</div>
+				<div class="two-box2" id="price">
+					<p>Price total</p>
+					<p>Tax total</p>
+					<p>Discount total</p>
+					<p>Grand total</p>
+					</div>
+				</div>
+			</div>
+			<div class="btm-div">
+			  <button class="pay"> PAY </button>
+		  </div>
+			
+		</div>
+		<div class="right-div">
+			<div class="category">
+				<div class="category-box">
+				<button class="btn-category">Food</button>
+				</div>
+				<div class="category-box">
+				<button class="btn-category">Beverage</button>
+				</div>
+				<div class="category-box">
+				<button class="btn-category">Dessert</button>
+				</div>
+				<div class="category-box">
+				<button class="btn-category">Alcohol</button>
+				</div>
+			</div>
+			<div class="display-category">
+			</div>
+		</div>
+	</div>
+	<h1>hello</h1>
+</body>
+</html>
